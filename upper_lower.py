@@ -13,4 +13,10 @@ print("Capitalized str ", str.capitalize())
 
 print("str.startwith ", str.startswith("Apple"))
 
-print("str.endwith ", str.strip().endswith("Banana")) #space remove to strip
+print("str.endwith ", str.strip().endswith("Banana")) #space remove to strip 
+
+num_str = input("Enter num ")
+while not num_str.isdigit():
+    num_str = input("Please enter correct number ")
+num = int(num_str)
+print(num, " is number")
