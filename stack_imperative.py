@@ -26,3 +26,4 @@ print("pop ",pop(my_stack))
 print("pop ",pop(my_stack))
 print("pop ",pop(my_stack))
 print("Is empty ", is_empty(my_stack))
+
