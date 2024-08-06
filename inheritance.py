@@ -17,6 +17,20 @@ class Doctor(Human): #Inheritance from Human class
         self.medical_field = medical_field #Self constructor
         print("Doctor constructor")
 
-drHla = Doctor("Hla Cho",40,"Surgical")
-drHla.work() #Inheritance from Human class's method
-drHla.eat() #Inheritance from Human class's method
+    def work(self):
+        super().work()
+        print("Doctor treat patient") # add new functionalities
+        
+class Robot:
+    def __init__(self):
+        pass
+    
+    def work(self):
+        print("Robot works")
+    
+d = Doctor("Hla Cho",40,"Surgical")
+d.work() #Inheritance from Human class's method
+d.eat() #Inheritance from Human class's method
+
+d = Robot()
+d.work()
